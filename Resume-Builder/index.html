@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Builder</h1>
+    <form id="resumeForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="experience">Experience:</label>
+      <textarea id="experience" name="experience" required></textarea>
+      
+      <label for="education">Education:</label>
+      <textarea id="education" name="education" required></textarea>
+      
+      <button type="submit">Generate Resume</button>
+    </form>
+    
+    <div id="preview" class="resume-output"></div>
+    
+    <button id="downloadPDF">Download as PDF</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
